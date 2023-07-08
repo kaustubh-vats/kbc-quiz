@@ -181,7 +181,6 @@ function App() {
     introAudio.play();
     introAudio.addEventListener('ended', () => {
       suspenseAudio.loop = true;
-      console.log('playing suspense3');
       suspenseAudio.play();
       setShouldDisplayQuestions(true);      
       setIntroAudio(new Audio(introAudioString));
@@ -236,7 +235,6 @@ function App() {
     newAudio.play();
     newAudio.addEventListener('ended', () => {
       if(!isPlaying(suspenseAudio)) {
-        console.log('playing suspense1');
         suspenseAudio.play();
       }
       setNewAudio(new Audio(newAudioString));
@@ -262,9 +260,7 @@ function App() {
     }
     lockAudio.play();
     lockAudio.addEventListener('ended', () => {
-      console.log('index', index, 'correctAnswer', correctAnswer);
       if(index === correctAnswer) {
-        console.log('index', index, 'correctAnswer', correctAnswer);
         setCorrectAnswer(correctAnswer);
         setTimeout(() => {
           if(currentQuestion === 16) {
@@ -277,7 +273,6 @@ function App() {
           if(!isPlaying(suspenseAudio)) {
             let randomSuspense = Math.floor(Math.random() * 3) + 1;
             suspenseAudio.src = `/assets/audios/suspense${randomSuspense}.mp3`;
-            console.log('playing suspense2');
             suspenseAudio.play();
           }
         }, 2000);
@@ -357,7 +352,6 @@ function App() {
   }
 
   const renderLifelinePrompt = () => {
-    console.log('usingLifeline', usingLifeline);
     let usedLifelines = liflines.filter((lifeline, index) => lifeline.isDisabled && lifeline.name !== 'powerPaplu' && !usingLifeline.includes(index));
     usedLifelines = usedLifelines.map((lifeline) => {
       return {
@@ -369,8 +363,6 @@ function App() {
       const papluIndex = lifelineIndexMap[usedLifelines[index].name];
       getLifelineByIndex(papluIndex);
     }
-    console.log('usedLifelines', usedLifelines);
-    console.log('lifelinePrompt', lifeLinePrompt);
     return (lifeLinePrompt && usedLifelines && usedLifelines.length > 0) ? (
       <div className='glass'>
         <div className='lifeline__prompt'>

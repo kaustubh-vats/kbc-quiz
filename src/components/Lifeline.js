@@ -7,7 +7,6 @@ function Lifeline(props) {
         return (isDisabled) ? 'lifeline__item--disabled' : 'lifeline__item--enabled';
     }
     const renderLifelines = () => {
-        console.log(lifelines);
         return lifelines.map((lifeline, index) => {
             const lifelineName = lifeline.name;
             const isDisabled = lifeline.isDisabled;

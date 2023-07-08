@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 function Question(props) {
     const { question, category, options, onAnswer, correctAnswer, usingDoubleDip} = props;
     const [locked, setLocked] = useState(-1);
-    console.log(question);
     const getAnswerClass = (index) => {
         if (locked === index && correctAnswer === -1 && usingDoubleDip !== 2) {
             return 'question__option--locked';
@@ -18,8 +17,7 @@ function Question(props) {
     useEffect(() => {
         setLocked(-1);
     }, [question]);
-
-    console.log(locked, correctAnswer, getAnswerClass(locked));
+    
     const onLocked = (index) => {
         setLocked(index);
         onAnswer(index);
