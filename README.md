@@ -1,73 +1,53 @@
+# KBC Quiz Game
+This is a KBC (Kaun Banega Crorepati) quiz game built using React. It features a similar interface to the KBC TV show, including sounds and three lifelines: Double Dip, 50-50, and Power Paplu. The game also includes a user interface that displays the current amount won by the player.
+<img src="/assets/imgs/ss.png" width="100%" alt="UI Image">
+
 ## Live link
 [https://kbc-quiz-kaustubh.netlify.app/](https://kbc-quiz-kaustubh.netlify.app/)
 
-# Getting Started with Create React App
+## Features
+1. KBC TV show-like interface
+2. Authentic sounds and effects
+3. Three lifelines: Double Dip, 50-50, and Power Paplu
+4. Real-time updating of the amount won
+5. React-based implementation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
+1. Clone the repository or download the source code:
+    ```shell
+    git clone https://github.com/your-username/kbc-quiz-game.git
+    ```
 
-## Available Scripts
+2. Navigate to the project directory:
+    ```shell
+    cd kbc-quiz-game
+    ```
 
-In the project directory, you can run:
+3. Install the dependencies:
+    ```shell
+    npm install
+    ```
 
-### `npm start`
+4. Start the development server:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```shell
+npm start
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5. Open a web browser and visit ```http://localhost:3000``` to play the game.
 
-### `npm test`
+## Usage
+1. The game will start with a welcome screen.
+2. Click on the desired lifeline buttons to use them when available.
+3. Read the question and select the correct answer from the options provided.
+4. If the answer is correct, you will proceed to the next question with an updated amount.
+5. If the answer is incorrect, the game will end, and your final amount will be displayed.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Lifelines
+1. The game includes three lifelines that can be used during the quiz
+2. Double Dip: Allows the player to choose two answers. If the first answer is incorrect, they can use the second one.
+3. 50-50: Removes two incorrect options, leaving the correct answer and one incorrect option.
+4. Power Paplu: Allows the player to revive a used lifeline.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
