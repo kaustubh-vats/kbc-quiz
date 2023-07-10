@@ -1,6 +1,7 @@
 # KBC Quiz Game
 This is a KBC (Kaun Banega Crorepati) quiz game built using React. It features a similar interface to the KBC TV show, including sounds and three lifelines: Double Dip, 50-50, and Power Paplu. The game also includes a user interface that displays the current amount won by the player.
-<img src="/assets/imgs/ss.png" width="100%" alt="UI Image">
+
+<img src="public/assets/imgs/ss.png" width="100%" alt="UI Image">
 
 ## Live link
 [https://kbc-quiz-kaustubh.netlify.app/](https://kbc-quiz-kaustubh.netlify.app/)
